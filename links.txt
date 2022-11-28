@@ -1,0 +1,4 @@
+API's - https://www.geeksforgeeks.org/introduction-to-apis/
+Network Programming - https://www.geeksforgeeks.org/python-network-programming/
+Tkinter - https://www.geeksforgeeks.org/python-gui-tkinter/
+Django - https://www.geeksforgeeks.org/django-tutorial/
