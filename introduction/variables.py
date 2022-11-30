@@ -8,15 +8,15 @@ class StudentData:
     # constructor method with instance variable [must have 'self' keyword as first parameter]
 	def __init__(self, name, age):
 		# instance variables
-		self.name = name
+		self.name1 = name
 		self.age = age
 
 	# normal method with instance variable percentage
 	def studentpercentage(self, percentage):
 		print("This student has got " + str(percentage) + "% of marks in UG")
 
-# defining method main()
-def main():
+# defining method
+def student_data():
 
 	# first object, setting up instance variables of constructor method
 	student1 = StudentData("Devid", 23)
@@ -46,4 +46,4 @@ def main():
 	student2.studentpercentage(80)
 
 if __name__ == "__main__":
-    main()
+    student_data()

@@ -16,15 +16,19 @@ print(name_1)
 # finding length of the string
 name_2 = 'language'
 print(len(name_2))
+print(type(len(name_2)))
 
 # adding string to the string
 output = name_1 + name_2
 print(output)
 
 # adding integer to the string | integer converted to string type
+# output = name_1 + ' ' + len(name_2) # Raise TypeError
 output = name_1 + ' ' + str(len(name_2))
 print (output)
 
 # adding integer to the string | string converted to integer type
 num = '8'
 print(8+int(num))
+# num = 'abc'
+# print(8+int(num)) # Raise ValueError
