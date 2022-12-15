@@ -13,6 +13,5 @@ for key, value in fruits.items():
 print(filtered_fruits)
 
 # Dict Comprehension
-
 filtered_fruits = { key:value for key, value in fruits.items() if value >= 10 }
 print(filtered_fruits)
