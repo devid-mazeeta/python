@@ -4,4 +4,5 @@ with open('xxx.png','rb') as file1, open('yyy.png','wb') as file2:
 		byte = file1.read(1)
 		if byte:
 			file2.write(byte)
-		else: break
+		else:
+			break

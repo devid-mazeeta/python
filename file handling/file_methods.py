@@ -25,11 +25,12 @@ time.sleep(10)
 
 # changes the directory
 os.chdir("sample")
+print (os.getcwd())
 time.sleep(10)
 
 # deletes the directory
-os.rmdir(r'E:/Users/Devid/Desktop/Code Master/Python/Scripts/python basics/file handling/sample')
-time.sleep(10)
+# os.rmdir(r'C:\Programming\pythontraining\file handling\sample') # Throws PermissionError
+# time.sleep(10)
 
 # returns current working directory
 print (os.getcwd())
