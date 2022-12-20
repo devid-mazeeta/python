@@ -1,3 +1,0 @@
-Hi to Python1!!!
-Welcome to Python2!!!
-Hello to Python3!!
