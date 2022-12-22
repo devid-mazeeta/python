@@ -4,11 +4,11 @@ text1 = '#$%aaabbbccc@gmail.com#$%aaabbbccc@gmail2.net' # text to match the regu
 # regex1 = r'([\w]+)@([\w]+\.[\w]+)' # pattern to match
 regex1 = r'(\w+)@(\w+\.\w+)' # pattern to match
 
-# match1 = re.search(regex1, text1) # searches the regex pattern in the given text and returns the first match
-# print(match1)
-
-match1 = re.search(regex1, "abc") # None
+match1 = re.search(regex1, text1) # searches the regex pattern in the given text and returns the first match
 print(match1)
+
+# match1 = re.search(regex1, "abc") # None
+# print(match1)
 
 if match1:
 	print(match1.groups()) # returns all the group in tuple
@@ -22,9 +22,9 @@ else:
 #################################################
 
 text2 = '#$%aaabbbccc@gmail.com'
-regex2 = r'([\w]+)@([\w]+\.[\w]+)'
+regex2 = r'^([\w]+)@([\w]+\.[\w]+)'
 
-match2 = re.match(regex2, text2) # matches the regex pattern from the beginning of the given text
+match2 = re.search(regex2, text2) # matches the regex pattern from the beginning of the given text
 
 if match2:
 	print(match2.group())
@@ -70,5 +70,5 @@ for word in match5:
 	print(word.span()) # provides start and end index of the match
 	print(word.start()) # provides start index of the match
 	print(word.end()) # provides end index of the match
-	
+
 ##################################################
