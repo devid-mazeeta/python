@@ -5,4 +5,4 @@ class NetworkError(RuntimeError):
 try:
 	raise NetworkError("Bad hostname") # raises an exception
 except NetworkError as ne:
-	print (ne.msg)
+	print(ne.msg)
