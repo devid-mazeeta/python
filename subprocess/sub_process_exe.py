@@ -2,24 +2,28 @@ import os
 import sys
 import subprocess
 
-folder_path = r'C:\Programming\python\Python basics\subprocess'
-os.chdir(folder_path) # changes the working directory
-script_path = os.path.join(folder_path, 'sub_script.py') # joins the script path
+dir_path = r'C:\Programming\pythontraining\subprocess'
+os.chdir(dir_path) # changes the working directory
+script_path = os.path.join(dir_path, 'sub_script.py') # joins the script path
 command = r'python "'+script_path+'"' # command to execute
+print(command)
 
-(status1, output) = subprocess.getstatusoutput(command) # returns both the status and output
+(status1, terminallog) = subprocess.getstatusoutput(command) # returns both the status and output
 status2 = os.system(command) # returns only the status
 
 # Status
 # 0 => no error
-# 1 => has error
+# 1 => contains error
 
 if status1:
 	print(status1)
 	print(status2)
-	sys.stderr.write(output)
+	print(terminallog)
+	sys.stderr.write(terminallog)
 	sys.exit()
 else:
 	print(status1)
 	print(status2)
-	print(output)
+	print(terminallog)
+
+print("\nTest Sys")

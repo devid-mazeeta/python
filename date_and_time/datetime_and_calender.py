@@ -3,11 +3,11 @@ import calendar
 
 # timestamp
 timestamp = time.time()
-print (timestamp)
+print(timestamp)
 
 # current time - returns in tuple
 local_time = time.localtime()
-print (local_time)
+print(local_time)
 
 # current time - returns in tuple
 cur_time = time.localtime(time.time())
