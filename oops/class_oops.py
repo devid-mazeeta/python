@@ -8,6 +8,7 @@ class SuperMarket:
 	def items(self, itemno, itemname):
 		self.itemno = itemno
 		self.itemname = itemname
+		print(itemno)
 		print(itemname)
 
 obj = SuperMarket("Devid")
