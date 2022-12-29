@@ -11,7 +11,7 @@ class Person(object):
 	def display(self):
 		print(self.name)
 		print(self.idnumber)
-		
+
 	def details(self):
 		print("My name is {}".format(self.name))
 		print("IdNumber: {}".format(self.idnumber))

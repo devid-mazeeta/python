@@ -1,11 +1,11 @@
 class TokenCounter:
-   __hiddenCount = 0 # data hiding
-  
-   def counter(self):
-      self.__hiddenCount += 1
-      print(self.__hiddenCount)
+	hiddencount = 0 # data hiding
+
+	def counter(self):
+		self.hiddencount += 1
+		print(self.hiddencount)
 
 number = TokenCounter()
 number.counter()
 number.counter()
-print (number.__hiddenCount)
+print(number.hiddencount)

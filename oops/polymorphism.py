@@ -6,19 +6,19 @@ class Bird:
 	def flight(self):
 		print("Most of the birds can fly but some cannot.")
 
-class sparrow(Bird):
+class Sparrow(Bird):
 
 	def flight(self):
 		print("Sparrows can fly.")
 
-class ostrich(Bird):
+class Ostrich(Bird):
 
 	def flight(self):
 		print("Ostriches cannot fly.")
 
 obj_bird = Bird()
-obj_spr = sparrow()
-obj_ost = ostrich()
+obj_spr = Sparrow()
+obj_ost = Ostrich()
 
 obj_bird.intro()
 obj_bird.flight()
