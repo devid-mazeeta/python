@@ -1,6 +1,4 @@
-# A Python program to demonstrate working
-# of OrderedDict
-
+# A Python program to demonstrate working of OrderedDict
 from collections import OrderedDict
 
 od = OrderedDict()

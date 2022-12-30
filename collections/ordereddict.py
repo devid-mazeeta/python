@@ -1,9 +1,7 @@
-# A Python program to demonstrate working
-# of OrderedDict
-
+# A Python program to demonstrate working of OrderedDict
 from collections import OrderedDict
 
-print("This is a Dict:\n")
+print("This is a Normal Dict:\n")
 d = {}
 d['a'] = 1
 d['b'] = 2

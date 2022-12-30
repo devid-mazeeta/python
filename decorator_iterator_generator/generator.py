@@ -1,11 +1,13 @@
+import sys
+
 # A generator function that yields 1 for first time, 2 second time and 3 third time
-def simpleGeneratorFun():
+def simplegeneratorfunc():
 	yield 1
 	yield 2
 	yield 3
 
 # Driver code to check above generator function
-for value in simpleGeneratorFun():
+for value in simplegeneratorfunc():
 	print(value)
 
 ################################################################
@@ -13,7 +15,7 @@ for value in simpleGeneratorFun():
 # A Python program to demonstrate use of generator object with next()
 
 # gen_obj is a generator object
-gen_obj = simpleGeneratorFun()
+gen_obj = simplegeneratorfunc()
 print(gen_obj)
 
 # Iterating over the generator object using next
@@ -25,7 +27,7 @@ print(gen_obj.__next__())
 
 # A simple generator for Fibonacci Numbers
 def fib(limit):
-	
+
 	# Initialize first two Fibonacci Numbers
 	a, b = 0, 1
 
@@ -43,6 +45,7 @@ print(gen_obj.__next__())
 print(gen_obj.__next__())
 print(gen_obj.__next__())
 print(gen_obj.__next__())
+# print(gen_obj.__next__()) # Exception - StopIteration
 
 # Iterating over the generator object using for in loop.
 print("\nUsing for in loop")

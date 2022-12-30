@@ -3,9 +3,12 @@ def shout(text):
 	return text.upper()
 
 print(shout('Hello'))
+print(type(shout('Hello')))
+print(type(shout))
 
 yell = shout
 
+print(yell)
 print(yell('Hello'))
 
 ###############################################################
@@ -39,5 +42,4 @@ def create_adder(x):
 # def adder(y):
 # 	return 15+y
 add_15 = create_adder(15)
-
 print(add_15(10))

@@ -19,7 +19,7 @@ def function_to_be_used():
 	print("This is inside the function !!")
 
 # passing 'function_to_be_used' inside the decorator to control its behaviour
-function_to_be_used = hello_decorator(function_to_be_used)
+function_returned = hello_decorator(function_to_be_used)
 
 # calling the function
-function_to_be_used()
+function_returned()
