@@ -1,5 +1,4 @@
 # Python program to demonstrate userlist
-
 from collections import UserList
 
 # Creating a List where deletion is not allowed
@@ -14,15 +13,15 @@ class MyList(UserList):
 		raise RuntimeError("Deletion not allowed")
 
 # Driver's code
-L = MyList([1, 2, 3, 4])
+user_list_obj = MyList([1, 2, 3, 4])
 
 print("Original List")
-print(L)
+print(user_list_obj)
 
 # Inserting to List
-L.append(5)
+user_list_obj.append(5)
 print("After Insertion")
-print(L)
+print(user_list_obj)
 
 # Deleting From List
-L.remove()
+user_list_obj.remove(s='q')

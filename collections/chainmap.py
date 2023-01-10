@@ -1,5 +1,4 @@
 # Python program to demonstrate ChainMap 
-
 from collections import ChainMap 
 
 d1 = {'a': 1, 'b': 2}
@@ -16,16 +15,21 @@ for k,v in c.items():
 
 # using new_child() to add new dictionary 
 new_c = c.new_child(d4)
-    
+
 # printing chainMap
-print ("Displaying new ChainMap : ") 
-print (new_c)
+print("Displaying new ChainMap : ") 
+print(new_c)
 
 #############################################
 
 # chain = [d1, d2, d3]
 # print(chain)
+# res_dict = {}
 
-# for ch in chain:
+# # for ch in chain:
+# for ch in [d1, d2, d3]:
 # 	for k,v in ch.items():
+# 		res_dict[k] = v
 # 		print(k,v)
+
+# print(res_dict)
