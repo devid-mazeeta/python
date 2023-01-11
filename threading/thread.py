@@ -2,13 +2,13 @@
 # importing the threading module
 import threading
 
-def print_cube(num):
-	# function to print cube of given num
-	print("Cube: {}" .format(num * num * num))
-
 def print_square(num):
 	# function to print square of given num
 	print("Square: {}" .format(num * num))
+
+def print_cube(num):
+	# function to print cube of given num
+	print("Cube: {}" .format(num * num * num))
 
 def print_number(num):
 	for x in range(num):
@@ -43,5 +43,5 @@ if __name__ =="__main__":
 	# wait until thread 4 is completely executed
 	t4.join()
 
-	# both threads completely executed
+	# all threads completely executed
 	print("Done!")

@@ -1,28 +1,30 @@
-# function that filters vowels
-def fun(variable):
+# filter(func, iter)
+
+# function filters vowels
+def vowels(letter):
 	letters = ['a', 'e', 'i', 'o', 'u']
-	if (variable in letters):
+	if (letter in letters):
 		return True
 	else:
 		return False
 
 # sequence
-sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r']
+characters = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r']
 
 # using filter function
-filtered = filter(fun, sequence)
+filtered = filter(vowels, characters)
 
 print('The filtered letters are:')
-for s in filtered:
-	print(s)
+for char in filtered:
+	print(char)
 
 # a list contains both even and odd numbers.
-seq = [0, 1, 2, 3, 5, 8, 13]
+mylist = [0, 1, 2, 3, 5, 8, 13]
 
 # result contains odd numbers of the list
-result = filter(lambda x: x % 2 != 0, seq)
+result = filter(lambda x: x % 2 != 0, mylist)
 print(list(result))
 
 # result contains even numbers of the list
-result = filter(lambda x: x % 2 == 0, seq)
+result = filter(lambda x: x % 2 == 0, mylist)
 print(list(result))

@@ -4,11 +4,11 @@ import os
 
 def task1():
 	print("Task 1 assigned to thread: {}".format(threading.current_thread().name))
-	print("ID of process running task 1: {}".format(os.getpid()))
+	print("ID of process running task 1: {}".format(threading.currentThread().ident))
 
 def task2():
 	print("Task 2 assigned to thread: {}".format(threading.current_thread().name))
-	print("ID of process running task 2: {}".format(os.getpid()))
+	print("ID of process running task 1: {}".format(threading.currentThread().ident))
 
 if __name__ == "__main__":
 
