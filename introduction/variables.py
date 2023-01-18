@@ -22,7 +22,7 @@ def student_data():
 	student1 = StudentData("Devid", 23)
 
 	# print out instance variable - 'name' & 'age' of first object
-	print(student1.name)
+	print(student1.name1)
 	print(student1.age)
 
 	# print out class variable - 'college' & 'location' of first object
@@ -33,7 +33,7 @@ def student_data():
 	student2 = StudentData("Loki", 22)
 
 	# print out instance variable - 'name' & 'age' of second object
-	print(student2.name)
+	print(student2.name1)
 	print(student2.age)
 	print(student1.age)
 

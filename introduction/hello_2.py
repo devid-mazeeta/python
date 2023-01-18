@@ -7,6 +7,8 @@ def printtext(name):
 # predefined main function
 if __name__ == '__main__':
 	printtext("Besant")
-	printtext(sys.argv[1]) # 'sys.argv[]' used to get first command line arguments
+	commandlineip1 = sys.argv[1]
+	printtext(commandlineip1) # 'sys.argv[1]' used to get first command line arguments
+	printtext(sys.argv[2]) # 'sys.argv[2]' used to get second command line arguments
 
 print("Welcome to Python")

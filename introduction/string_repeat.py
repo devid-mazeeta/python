@@ -1,15 +1,13 @@
 import sys
 
 # Method 1
-
 character = 'a'
 print(character * 8)
 number = 1
 print(number * 8) # Performs multiplication
-print(str(number) * 8)
+print(str(number) * 8) # Performs string repeat
 
 # Method 2
-
 # user defined function declaration
 def variable_repeat(text, nooftimes):
 	value = text * nooftimes
