@@ -17,7 +17,7 @@ Triple Double Quoted Text!!!
 Triple Double Quoted Text!!!"""
 print(d_triple_quote_text)
 
-text_mixed_with_quotes = "6\" inch Fruit's"
+text_mixed_with_quotes = "6\" inch Fruit's" # Otherwise -> '6" inch Fruit\'s'
 print(text_mixed_with_quotes)
 
 # string using literals

@@ -15,3 +15,15 @@ print(list1[1:2]) # ['b']
 print(list1[-2:]) # ['c', 'd']
 print(list1[:]) # ['a', 'b', 'c', 'd']
 print(list1[:3]) # ['a', 'b', 'c']
+
+# Reverse a list using slicing
+print(list2[::-1])
+
+# Accessing List of list
+list3 = [
+	[1,2,3],
+	[4,5,6]
+]
+
+print(list3[0][2]) # 3
+print(list3[1][2]) # 6
