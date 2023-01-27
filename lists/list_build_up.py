@@ -7,7 +7,7 @@ names2.append("Gokul") # ["Gokul"]
 names2.append("Jay") # ["Gokul", "Jay"]
 print(names2)
 
-names3 = ["Gokul", "Jay"]
+names3 = names1
 names3.insert(1, "Ajay") # ["Gokul", "Ajay", "Jay"]
 names3.insert(2, "Alex") # ["Gokul", "Ajay", "Alex", "Jay"]
 print(names3)
@@ -21,3 +21,13 @@ names4.append('perl')
 
 print(names4) # ['java', 'python', 'sql', 'perl']
 print(len(names4)) # 4
+
+### Using Loop ###
+
+fivedivisibles = []
+
+for num in range(100,201):
+	if num % 5 == 0:
+		fivedivisibles.append(num)
+
+print(fivedivisibles)

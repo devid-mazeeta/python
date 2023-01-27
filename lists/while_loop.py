@@ -5,9 +5,9 @@ num = 1
 
 while num < 11:
 	print(num)
-	num += 1
+	num += 1 # num = num + 1
 
-# Example 2 -> 
+# Example 2 -> Control statements
 number = 1
 
 while number > 0:
